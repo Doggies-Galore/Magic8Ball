@@ -1,5 +1,6 @@
 print("Welcome to Burger Castle. Give us one moment while we download our menu...")
 import os
+import difflib
 bag=[]
 os.system("wget -q https://raw.githubusercontent.com/Doggies-Galore/Magic8Ball/main/menu.acr")
 import subprocess as sp

@@ -24,11 +24,10 @@ menu=sp.getoutput("cat menu.acr")
 print("Here's one we have to offer:")
 print(menu)
 print("Can I get anything started for you?")
-def similar(a, b):
-    result=SequenceMatcher(None, a, b).ratio()
 selection=(input(""))
 for x in menu:
-  similar(x,selection)
+  seq=difflib.SequenceMatcher(None, a,b)
+  e=seq.ratio()*100
   if result < 0.5:
     print("Did you mean?")
 if "quit" or "" in selection:

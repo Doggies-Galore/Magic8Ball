@@ -1,7 +1,7 @@
 print("Welcome to Burger Castle. Give us one moment while we download our menu...")
 import os
 bag=[]
-os.system("wget -q ")
+os.system("wget -q https://raw.githubusercontent.com/Doggies-Galore/Magic8Ball/main/menu.acr")
 import subprocess as sp
 menu=sp.getoutput("cat menu.acr")
 print("Here's one we have to offer:")

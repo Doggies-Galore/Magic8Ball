@@ -8,7 +8,6 @@ import os
 #ortngounw4topbfg4q2netbgho
 #i4gptbn4weigtbnpin4wtgjnopiw4nqg2ntqw4bgntop
 #iwn3bgifbn3i2bgni3bnipgtnbpijo3rn3og;jno3;q2nwgjktrnlq32rgt
-from difflib import SequenceMatcher
 bag=[]
 #3qrkgkqo34nrgo[nqoi234ngioBNOBN$@TVOBNO$IT@NBOVE$TF@oi3qrjg3qorgnqo34nrgojn3r2jo
 #ortngounw4topbfg4q2netbgho
@@ -25,11 +24,6 @@ print("Here's one we have to offer:")
 print(menu)
 print("Can I get anything started for you?")
 selection=(input(""))
-for x in menu:
-  seq=difflib.SequenceMatcher(None, a,b)
-  e=seq.ratio()*100
-  if result < 0.5:
-    print("Did you mean?")
 if "quit" or "" in selection:
   print("thank you!! Your order will arive at the speed of 56kp/s!") 
   print("Your bag")

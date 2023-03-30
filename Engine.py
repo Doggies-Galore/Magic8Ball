@@ -1,6 +1,6 @@
 print("Welcome to Burger Castle. Give us one moment while we download our menu...")
 import os
-import difflib
+from difflib import SequenceMatcher
 bag=[]
 os.system("wget -q https://raw.githubusercontent.com/Doggies-Galore/Magic8Ball/main/menu.acr")
 import subprocess as sp
@@ -13,7 +13,7 @@ def similar(a, b):
 selection=(input(""))
 for x in menu:
   similar(x,selection)
-  if result < 0.7:
+  if result < 0.5:
     print("Did you mean?")
 if "quit" or "" in selection:
   print("thank you!! Your order will arive at the speed of 56kp/s!") 

@@ -14,10 +14,11 @@ for x in menu:
   similar(x,selection)
   if result < 0.7:
     print("Did you mean?")
-if exit in selection:
+if "quit" or "" in selection:
   print("thank you!! Your order will arive at the speed of 56kp/s!") 
   print("Your bag")
   print(bag)
+  exit()
 if not result in menu:
   print("Sorry, I didn't get that.")
 else:

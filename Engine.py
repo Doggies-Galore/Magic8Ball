@@ -29,7 +29,7 @@ if "quit" in selection:
   print("Your bag")
   print(bag)
   exit()
-if not result in menu:
+if not selection in menu:
   print("Sorry, I didn't get that.")
 else:
   print("Ofc! Good choice")

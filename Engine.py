@@ -34,4 +34,4 @@ if not selection in menu:
 else:
   print("Ofc! Good choice")
   bag.append(selection)
-  
+  #add to bag ig

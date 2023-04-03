@@ -22,16 +22,17 @@ import subprocess as sp
 menu=sp.getoutput("cat menu.acr")
 print("Here's one we have to offer:")
 print(menu)
-print("Can I get anything started for you?")
-selection=(input(""))
-if "quit" in selection:
-  print("thank you!! Your order will arive at the speed of 56kp/s!") 
-  print("Your bag")
-  print(bag)
-  exit()
-if not selection in menu:
-  print("Sorry, I didn't get that.")
-else:
-  print("Ofc! Good choice")
-  bag.append(selection)
-  #add to bag ig
+while True:
+  print("Can I get anything started for you?")
+  selection=(input(""))
+  if "quit" in selection:
+    print("thank you!! Your order will arive at the speed of 56kp/s!") 
+    print("Your bag")
+    print(bag)
+    exit()
+  if not selection in menu:
+    print("Sorry, I didn't get that.")
+  else:
+    print("Ofc! Good choice")
+    bag.append(selection)
+    #add to bag ig

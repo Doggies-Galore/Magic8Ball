@@ -32,6 +32,7 @@ while True:
     exit()
   if not selection in menu:
     print("Sorry, I didn't get that.")
+    #keep going bingeouw
   else:
     print("Ofc! Good choice")
     bag.append(selection)

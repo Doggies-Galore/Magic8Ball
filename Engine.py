@@ -24,7 +24,7 @@ print("Here's one we have to offer:")
 print(menu)
 print("Can I get anything started for you?")
 selection=(input(""))
-if "quit" in selection or selection == "":
+if "quit" in selection:
   print("thank you!! Your order will arive at the speed of 56kp/s!") 
   print("Your bag")
   print(bag)

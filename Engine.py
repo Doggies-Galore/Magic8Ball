@@ -22,6 +22,7 @@ import subprocess as sp
 menu=sp.getoutput("cat menu.acr")
 print("Here's one we have to offer:")
 print(menu)
+#fruit loops V
 while True:
   print("Can I get anything started for you?")
   selection=(input(""))
